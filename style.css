@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#categories div {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+#categories div:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

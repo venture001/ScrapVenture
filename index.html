@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ScrapVenture - Turning Waste into Wealth</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>ScrapVenture</h1>
+        <p>Turning Waste into Wealth</p>
+    </header>
+
+    <section>
+        <h2>Recycle with Ease</h2>
+        <p>We collect your scrap and turn it into something valuable!</p>
+        <button onclick="scrollToForm()">Book a Pickup</button>
+    </section>
+
+    <section id="categories">
+        <h2>Scrap Categories</h2>
+        <div onclick="selectCategory('Plastic')">
+            <img src="images/plastic.jpg" alt="Plastic">
+            <h3>Plastic</h3>
+        </div>
+        <div onclick="selectCategory('Metal')">
+            <img src="images/metal.jpg" alt="Metal">
+            <h3>Metal</h3>
+        </div>
+        <div onclick="selectCategory('E-Waste')">
+            <img src="images/ewaste.jpg" alt="E-Waste">
+            <h3>E-Waste</h3>
+        </div>
+        <div onclick="selectCategory('Cardboard')">
+            <img src="images/cardboard.jpg" alt="Cardboard">
+            <h3>Cardboard</h3>
+        </div>
+    </section>
+
+    <section id="form-section">
+        <h2>Book a Scrap Pickup</h2>
+        <form id="pickupForm" onsubmit="submitForm(event)">
+            <label>Name:</label>
+            <input type="text" id="name" required>
+
+            <label>Phone:</label>
+            <input type="tel" id="phone" required>
+
+            <label>Selected Category:</label>
+            <input type="text" id="category" readonly>
+
+            <label>Upload Scrap Photo:</label>
+            <input type="file" id="photo" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="confirmation" style="display:none;">Our team will pick up your scrap in 3 working days!</p>
+    </section>
+
+    <footer>
+        <p>Contact Us: 8767427686 | service@scrapventure.com</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
